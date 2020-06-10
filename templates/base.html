@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 下面三行一定要有，否则在手机上显示字体非常小 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <title>MUI学习与演示</title>
+  <link rel="stylesheet" href="{{ static_url('css/mui.min.css') }}">
+  {% block block_head %}{% end %}
+</head>
+<body>
+{% block block_body %}{% end %}
+<script src="{{ static_url('js/mui.js') }}"></script>
+<script type="text/javascript" charset="utf-8">
+    //mui初始化
+    mui.init();
+</script>
+{% block block_foot %}{% end %}
+</body>
+</html>
